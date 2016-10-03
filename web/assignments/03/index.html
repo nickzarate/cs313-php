@@ -9,23 +9,32 @@
   <body onLoad="setup()">
     <?php
     ?>
-    <h3>1. How physically healthy are you?</h3>
-    <input
-      type="text"
-      name="somename"
-      data-provide="slider"
-      data-slider-ticks="[1, 2, 3]"
-      data-slider-ticks-labels='["short", "medium", "long"]'
-      data-slider-min="1"
-      data-slider-max="3"
-      data-slider-step="1"
-      data-slider-value="3"
-      data-slider-tooltip="hide"
-      class="slider"
-    >
+    <h3>1. Do you take nutritional supplements?</h3>
+    <div class="radio">
+      <label><input type="radio" name="optradio">Yes</label>
+      <label><input type="radio" name="optradio">No</label>
+    </div>
     <h3>2. How important is exercise to you?</h3>
+    <div class="radio">
+      <label><input type="radio" name="optradio">Not at all important</label>
+      <label><input type="radio" name="optradio">Somewhat important</label>
+      <label><input type="radio" name="optradio">Extremely important</label>
+    </div>
     <h3>3. What do you most often do for exercise?</h3>
-    <h3>4. Do you take nutritional supplements?</h3>
+    <div class="radio">
+      <label><input type="radio" name="optradio">Lift Weights</label>
+      <label><input type="radio" name="optradio">Walk</label>
+      <label><input type="radio" name="optradio">Run</label>
+      <label><input type="radio" name="optradio">Hike</label>
+      <label><input type="radio" name="optradio">Swim</label>
+      <label><input type="radio" name="optradio">Dance</label>
+      <label><input type="radio" name="optradio">Aerobics</label>
+      <label><input type="radio" name="optradio">Pilates</label>
+      <label><input type="radio" name="optradio">Play a Team Sport</label>
+      <label><input type="radio" name="optradio">Other</label>
+    </div>
+    <h3>4. In a typical day, how many of your meals or snacks include vegetables?</h3>
+    <input type="text" />
     <button onClick="submitForm()">Cast your vote</button>
     <a href="https://peaceful-dusk-28535.herokuapp.com/assignments/03/results.html">See Results</a>
   </body>
