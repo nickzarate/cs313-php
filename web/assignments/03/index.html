@@ -2,8 +2,30 @@
 
 <html>
   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.2.0/css/bootstrap-slider.min.css">
+    <script src="https://peaceful-dusk-28535.herokuapp.com/assignments/03/survey.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.2.0/bootstrap-slider.min.js"></script>
   </head>
   <body>
+    <?php
+    ?>
+    <h3>1. How physically healthy are you?</h3>
+    <input
+      type="text"
+      name="somename"
+      data-provide="slider"
+      data-slider-ticks="[1, 2, 3]"
+      data-slider-ticks-labels='["short", "medium", "long"]'
+      data-slider-min="1"
+      data-slider-max="3"
+      data-slider-step="1"
+      data-slider-value="3"
+      data-slider-tooltip="hide"
+    >
+    <h3>2. How important is exercise to you?</h3>
+    <h3>3. What do you most often do for exercise?</h3>
+    <h3>4. Do you take nutritional supplements?</h3>
+    <button onClick="submitForm()">Cast your vote</button>
     <a href="https://peaceful-dusk-28535.herokuapp.com/assignments/03/results.html">See Results</a>
   </body>
 </html>
