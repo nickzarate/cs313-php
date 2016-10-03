@@ -6,7 +6,7 @@
     <script src="https://peaceful-dusk-28535.herokuapp.com/assignments/03/survey.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.2.0/bootstrap-slider.min.js"></script>
   </head>
-  <body>
+  <body onLoad="setup()">
     <?php
     ?>
     <h3>1. How physically healthy are you?</h3>
@@ -21,6 +21,7 @@
       data-slider-step="1"
       data-slider-value="3"
       data-slider-tooltip="hide"
+      class="slider"
     >
     <h3>2. How important is exercise to you?</h3>
     <h3>3. What do you most often do for exercise?</h3>
